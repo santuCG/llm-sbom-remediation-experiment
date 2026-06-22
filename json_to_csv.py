@@ -1,8 +1,8 @@
 import json
 import csv
 
-# Load the generated JSON array
-with open('final_18_cves.json', 'r', encoding='utf-8') as f:
+# Load the generated JSON array with UTF-16 since Powershell output redirection defaults to it
+with open('final_18_cves.json', 'r', encoding='utf-16') as f:
     cves = json.load(f)
 
 # Define CSV columns based on the original structure + required rules
