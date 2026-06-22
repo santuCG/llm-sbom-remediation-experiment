@@ -1,0 +1,13 @@
+# Juice Shop Baseline
+
+- **Application:** OWASP Juice Shop v15.3.0
+- **Docker Image:** `bkimminich/juice-shop:v15.3.0`
+- **Dependency Ecosystem:** NPM
+
+This folder contains the raw Software Bill of Materials (SBOM) and Grype vulnerability scans for the Juice Shop application prior to any LLM remediation.
+
+### Contents
+- `image_info.md`: Basic metadata about the target container image.
+- `sbom/sbom.json`: Syft output (SPDX JSON).
+- `grype/grype.json`: Grype vulnerability scan output.
+- `candidates/`: Reserved for LLM-generated patch suggestions or candidate dependencies.
